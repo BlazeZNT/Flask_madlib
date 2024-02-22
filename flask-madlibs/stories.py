@@ -38,8 +38,18 @@ class Story:
 # Here's a story to get you started
 
 
-story = Story(
-    ["place", "noun", "verb", "adjective", "plural_noun"],
-    """Once upon a time in a long-ago {place}, there lived a
-       large {adjective} {noun}. It loved to {verb} {plural_noun}."""
-)
+# story = Story(
+#     ["place", "noun", "verb", "adjective", "plural_noun"],
+#     """Once upon a time in a long-ago {place}, there lived a
+#        large {adjective} {noun}. It loved to {verb} {plural_noun}."""
+# )
+
+# ans1 = {"verb": "spit", "noun": "dragon","place":"kindom","adjective":"foul","plural_noun":"fire"}
+
+# print(story.generate(ans1))
+
+# s = Story(["noun", "verb"],"I love to {verb} a good {noun}.")
+
+# ans = {"verb": "eat", "noun": "mango"}
+# print(s.generate(ans))
+
