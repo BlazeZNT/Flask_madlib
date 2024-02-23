@@ -3,18 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/app.css">
     <title>Home</title>
 </head>
 <body>
     <h1>MadLibs</h1>
 
+    <form action="/story" id="myForm">
     {%for val in ask%}
-        <form action="/story" id="myForm">
             <label for="{{val}}">{{val}}: </label>
-            <input type="text" name = "{{val}}">
-        </form>
+            <input type="text" name = "{{val}}">   
     {%endfor%}
-    <button type="button" onclick="submitForm()">Submit</button>
+        <button>Submit</button>
+    </form>
 
+    
 </body>
 </html>
